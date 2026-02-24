@@ -1,11 +1,9 @@
 def sort_array(myarray):
     i = 0
-    if range(myarray[i]) > range(myarray[i+1]):
-        value = myarray[i]
-        return myarray[value, i]
+    if myarray[i] > myarray[i+1]:
+        return [myarray[i+1], myarray[i]]
     else:
-        value = myarray[i+1]
-        return myarray[value, i]
+        return [myarray[i], myarray[i+1]]
 
 
-print(sort_array([1, 3]))
+print(sort_array([3, 2]))
